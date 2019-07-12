@@ -96,9 +96,9 @@ app.post("/sign-up", (req, res, next) => {
 });
 
 // Sign-In POST Route
-app.post(
-  "/log-in",
-  passport.authenticate("local", {
+app.post("/log-in",
+  passport.authenticate("local",
+  {
     successRedirect: "/",
     failureRedirect: "/"
   })
